@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architecture Project</title>
+    <!-- Link to Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        /* Architecture Project Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f9f9f9; /* Architecture Project background color */
         }
         header, footer {
             background-color: #333;
@@ -44,29 +47,108 @@
             padding: 20px;
         }
         h1 {
+            color: #fff;
+        }
+
+        /* The Leafly Kitchen Styles */
+        .container {
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            width: 80%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        .logo-section {
+            flex: 1; /* Allow the logo section to take up available space */
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
+        }
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+        .tagline {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            display: flex; /* Align icons horizontally */
+            gap: 15px; /* Add spacing between icons */
+        }
+        .social-icons a {
             color: #333;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #0071bc;
+        }
+        .menu-section {
+            flex: 1; /* Allow the menu section to take up available space */
+        }
+        .menu-section button {
+            display: block;
+            width: 100%; /* Make buttons take full width of the section */
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #333;
+            background-color: #F6F2EA;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+        .menu-section button:hover {
+            background-color: #E5E2D6;
         }
     </style>
 </head>
 <body>
 
+<!-- Architecture Project Section -->
 <header>
-    <h1>Architecture Project</h1>
+    <h1>The Leafy Kitchen</h1>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#menu">Menu</a>
+    <a href="#seasonal-dishes">Seasonal Dishes</a>
+    <a href="#inside-the-cafe">Inside the Cafe</a>
+    <a href="#delivery-faq">Delivery FAQ</a>
+    <a href="#about-us">About Us</a>
+    <a href="#our-advocacy">Our Advocacy</a>
 </nav>
 
+<!-- The Leafly Kitchen Section -->
 <section>
-    <main>
-        <h1>Welcome to the Architecture Project</h1>
-        <p>This is a generic starter template for your architecture project. Customize it as needed.</p>
-        <img src="placeholder.jpg" alt="A placeholder image for the architecture project" style="max-width: 100%; height: auto;">
-    </main>
+    <div class="container">
+        <div class="logo-section">
+            <div class="logo">
+                <img src="logo-placeholder.png" alt="The Leafly Kitchen Logo">
+            </div>
+            <h1 style="color: blue;"> The Leafly Kitchen</h1>
+            <p class="tagline">Comfort food made with plant-based ingredients and lots of love</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="menu-section">
+            <button>Menu</button>
+            <button>Seasonal Dishes</button>
+            <button>Inside the Cafe</button>
+            <button>Delivery FAQ</button>
+            <button>About Us</button>
+            <button>Our Advocacy</button>
+        </div>
+    </div>
 </section>
 
 <footer>
