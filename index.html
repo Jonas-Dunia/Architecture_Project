@@ -11,22 +11,37 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
         header, footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
         }
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         main {
             padding: 20px;
             background: white;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
             border-radius: 10px;
+        }
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
         h1 {
             color: #333;
@@ -39,12 +54,20 @@
     <h1>Architecture Project</h1>
 </header>
 
-<div class="container">
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section>
     <main>
         <h1>Welcome to the Architecture Project</h1>
         <p>This is a generic starter template for your architecture project. Customize it as needed.</p>
+        <img src="placeholder.jpg" alt="A placeholder image for the architecture project" style="max-width: 100%; height: auto;">
     </main>
-</div>
+</section>
 
 <footer>
     <p>&copy; 2025 Architecture Project. All rights reserved.</p>
