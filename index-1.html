@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Dishes - The Leafly Kitchen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+        .grid-item {
+            background-color: #e2e2e2;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Seasonal Dishes at The Leafly Kitchen</h1>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="seasonal-dishes.html">Seasonal Dishes</a>
+</nav>
+<div class="grid-container">
+    <div class="grid-item">
+        <h3>Spring Salad</h3>
+        <p>Fresh greens, avocado, and a zesty lemon dressing.</p>
+    </div>
+    <div class="grid-item">
+        <h3>Summer Fruit Tart</h3>
+        <p>Loaded with seasonal berries and a sweet crust.</p>
+        <audio controls>
+            <source src="example-audio.mp3" type="audio/mp3">
+            Your browser does not support audio.
+        </audio>
+    </div>
+    <div class="grid-item">
+        <h3>Autumn Pumpkin Soup</h3>
+        <p>Creamy pumpkin puree, spices, and toasted seeds.</p>
+    </div>
+    <div class="grid-item">
+        <h3>Winter Root Veggie Stew</h3>
+        <p>Hearty stew featuring local root vegetables.</p>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 The Leafly Kitchen. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,159 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architecture Project</title>
-    <!-- Link to Font Awesome -->
+    <title>The Leafly Kitchen</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* Architecture Project Styles */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9; /* Architecture Project background color */
         }
         header, footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
         }
         nav {
             background-color: #444;
-            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
         }
         nav a {
             color: white;
+            margin: 0 10px;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
-        main {
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        section {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-        }
-        h1 {
-            color: #fff;
-        }
-
-        /* The Leafly Kitchen Styles */
-        .container {
-            display: flex; /* Use Flexbox for layout */
-            justify-content: space-between;
-            align-items: flex-start;
-            text-align: left;
-            width: 80%;
-            max-width: 1200px;
-            margin: 40px auto;
-        }
-        .logo-section {
-            flex: 1; /* Allow the logo section to take up available space */
-            margin-right: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align items to the left */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
         .logo img {
-            width: 80px;
+            max-width: 100%;
             height: auto;
         }
-        .tagline {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .social-icons {
-            display: flex; /* Align icons horizontally */
-            gap: 15px; /* Add spacing between icons */
-        }
-        .social-icons a {
-            color: #333;
-            font-size: 24px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #0071bc;
-        }
-        .menu-section {
-            flex: 1; /* Allow the menu section to take up available space */
-        }
         .menu-section button {
-            display: block;
-            width: 100%; /* Make buttons take full width of the section */
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid #333;
-            background-color: #F6F2EA;
-            font-size: 16px;
-            color: #333;
-            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
         }
-        .menu-section button:hover {
-            background-color: #E5E2D6;
+        video {
+            width: 100%;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-
-<!-- Architecture Project Section -->
 <header>
-    <h1>The Leafy Kitchen</h1>
+    <h1>The Leafly Kitchen</h1>
 </header>
-
 <nav>
-    <a href="#menu">Menu</a>
-    <a href="#seasonal-dishes">Seasonal Dishes</a>
+    <a href="index.html">Menu</a>
+    <a href="seasonal-dishes.html">Seasonal Dishes</a>
     <a href="#inside-the-cafe">Inside the Cafe</a>
     <a href="#delivery-faq">Delivery FAQ</a>
     <a href="#about-us">About Us</a>
     <a href="#our-advocacy">Our Advocacy</a>
 </nav>
-
-<!-- The Leafly Kitchen Section -->
-<section>
-    <div class="container">
-        <div class="logo-section">
-            <div class="logo">
-                <img src="logo-placeholder.png" alt="The Leafly Kitchen Logo">
-            </div>
-            <h1 style="color: blue;"> The Leafly Kitchen</h1>
-            <p class="tagline">Comfort food made with plant-based ingredients and lots of love</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+<div class="container">
+    <div class="logo-section">
+        <div class="logo">
+            <img src="logo-placeholder.png" alt="The Leafly Kitchen Logo">
         </div>
-        <div class="menu-section">
-            <button>Menu</button>
-            <button>Seasonal Dishes</button>
-            <button>Inside the Cafe</button>
-            <button>Delivery FAQ</button>
-            <button>About Us</button>
-            <button>Our Advocacy</button>
+        <p class="tagline">Comfort food made with plant-based ingredients and lots of love</p>
+        <div class="social-icons">
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
+    <div class="menu-section">
+        <button>Menu</button>
+        <button onclick="location.href='seasonal-dishes.html'">Seasonal Dishes</button>
+        <button>Inside the Cafe</button>
+        <button>Delivery FAQ</button>
+        <button>About Us</button>
+        <button>Our Advocacy</button>
+    </div>
+</div>
+<section>
+    <h2 style="text-align:center;">Explore Our Kitchen</h2>
+    <video controls>
+        <source src="example-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
 </section>
-
 <footer>
-    <p>&copy; 2025 Architecture Project. All rights reserved.</p>
+    <p>&copy; 2025 The Leafly Kitchen. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
