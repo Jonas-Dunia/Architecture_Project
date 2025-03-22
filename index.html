@@ -12,6 +12,17 @@
             margin: 0;
             padding: 0;
         }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
         header, footer {
             background-color: #333;
             color: white;
@@ -30,6 +41,9 @@
         }
         nav a:hover {
             text-decoration: underline;
+        }
+        nav a:focus {
+            outline: 2px dashed yellow;
         }
         .container {
             display: grid;
@@ -61,10 +75,11 @@
     </style>
 </head>
 <body>
-<header>
+<a href="#main-content" class="skip-link">Skip to Content</a>
+<header role="banner">
     <h1>The Leafly Kitchen</h1>
 </header>
-<nav>
+<nav role="navigation">
     <a href="index.html">Menu</a>
     <a href="index-1.html">Seasonal Dishes</a>
     <a href="#inside-the-cafe">Inside the Cafe</a>
@@ -72,7 +87,8 @@
     <a href="#about-us">About Us</a>
     <a href="#our-advocacy">Our Advocacy</a>
 </nav>
-<div class="container">
+
+<main id="main-content" class="container" role="main" tabindex="-1">
     <div class="logo-section">
         <div class="logo">
             <img src="C:/Users/Owner/Desktop/Architecture_Project/Logo.png" alt="The Leafly Kitchen Logo">
@@ -86,21 +102,24 @@
     </div>
     <div class="menu-section">
         <button>Menu</button>
-        <button onclick="location.href='seasonal-dishes.html'">Seasonal Dishes</button>
+        <button onclick="location.href='index-1.html'">Seasonal Dishes</button>
         <button>Inside the Cafe</button>
         <button>Delivery FAQ</button>
         <button>About Us</button>
         <button>Our Advocacy</button>
     </div>
-</div>
-<section>
-    <h2 style="text-align:center;">Explore Our Kitchen</h2>
+</main>
+
+<section aria-labelledby="video-heading">
+    <h2 id="video-heading" style="text-align:center;">Explore Our Kitchen</h2>
     <video controls autoplay loop>
         <source src="C:/Users/Owner/Desktop/Architecture_Project/restaurant-video.mp4" type="video/mp4">
-        Your browser does not support video.
+        Your browser does not support video playback.
     </video>
+    <p style="text-align:center;"><a href="#">View Transcript of the Video</a></p>
 </section>
-<footer>
+
+<footer role="contentinfo">
     <p>&copy; 2025 The Leafly Kitchen. All rights reserved.</p>
 </footer>
 </body>
